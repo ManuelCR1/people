@@ -26,93 +26,92 @@
           $this->html = $html;
         }
       }
-      $arr = ["A"=>[], "B"=>[], "C"=>[], "D"=>[], "E"=>[], "F"=>[], "G"=>[], "H"=>[], "I"=>[], "J"=>[], "K"=>[], "L"=>[], "M"=>[], "N"=>[], "O"=>[], "P"=>[], "Q"=>[], "R"=>[], "S"=>[], "T"=>[], "U"=>[], "V"=>[], "W"=>[], "X"=>[], "Y"=>[], "Z"=>[]];
+      $arr = ["A"=>[], "B"=>[], "C"=>[], "D"=>[], "E"=>[], "F"=>[], "G"=>[], "H"=>[], "I"=>[], "J"=>[], "K"=>[], "L"=>[], "M"=>[], "N"=>[],
+      "O"=>[], "P"=>[], "Q"=>[], "R"=>[], "S"=>[], "T"=>[], "U"=>[], "V"=>[], "W"=>[], "X"=>[], "Y"=>[], "Z"=>[]];
 
       foreach ($rows as $row_number => $columns){
         foreach ($columns as $column_number => $item){
-          $html = htmlspecialchars($item);
-          $inicial_f = explode("views-field-field-last-name", $html);
-          $inicial = substr($inicial_f[1], 61, 1);
-
+          $name = substr($item, 105, 105);
+          $inicial = substr($name, 0, 1);
           $newItem = new Item($inicial, $item);
 
           switch ($inicial) {
-            case "A":
+            case "a":
                 array_push($arr["A"], $newItem);
                 break;
-            case "B":
+            case "b":
                 array_push($arr["B"], $newItem);
                 break;
-            case "C":
+            case "c":
                 array_push($arr["C"], $newItem);
                 break;
-            case "D":
+            case "d":
                 array_push($arr["D"], $newItem);
                 break;
-            case "E":
+            case "e":
                 array_push($arr["E"], $newItem);
                 break;
-            case "F":
+            case "f":
                 array_push($arr["F"], $newItem);
                 break;
-            case "G":
+            case "g":
                 array_push($arr["G"], $newItem);
                 break;
-            case "H":
+            case "h":
                 array_push($arr["H"], $newItem);
                 break;
-            case "I":
+            case "i":
                 array_push($arr["I"], $newItem);
                 break;
-            case "J":
+            case "j":
                 array_push($arr["J"], $newItem);
                 break;
-            case "K":
+            case "k":
                 array_push($arr["K"], $newItem);
                 break;
-            case "L":
+            case "l":
                 array_push($arr["L"], $newItem);
                 break;
-            case "M":
+            case "m":
                 array_push($arr["M"], $newItem);
                 break;
-            case "N":
+            case "n":
                 array_push($arr["N"], $newItem);
                 break;
-            case "O":
+            case "o":
                 array_push($arr["O"], $newItem);
                 break;
-            case "P":
+            case "p":
                 array_push($arr["P"], $newItem);
                 break;
-            case "Q":
+            case "q":
                 array_push($arr["Q"], $newItem);
                 break;
-            case "R":
+            case "r":
                 array_push($arr["R"], $newItem);
                 break;
-            case "S":
+            case "s":
                 array_push($arr["S"], $newItem);
                 break;
-            case "T":
+            case "t":
                 array_push($arr["T"], $newItem);
                 break;
-            case "U":
+            case "u":
                 array_push($arr["U"], $newItem);
                 break;
-            case "V":
+            case "v":
                 array_push($arr["V"], $newItem);
                 break;
-            case "W":
+            case "w":
                 array_push($arr["W"], $newItem);
                 break;
-            case "X":
+            case "x":
                 array_push($arr["X"], $newItem);
                 break;
-            case "Y":
+            case "y":
                 array_push($arr["Y"], $newItem);
                 break;
-            case "Zwhe":
+            case "z":
                 array_push($arr["Z"], $newItem);
                 break;
           }
